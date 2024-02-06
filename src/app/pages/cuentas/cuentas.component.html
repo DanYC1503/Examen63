@@ -1,0 +1,21 @@
+<h2>Listado de Cuentas</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Propietario</th>
+      <th>NumTelefono</th>
+      <th>Saldo</th>
+      <th>Fecha de Creación</th>
+      <th>Operadora</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cuenta of cuentas | async">
+      <td>{{ cuenta.nombreCuenta }}</td>
+      <td>{{ cuenta.numTelefono }}</td>
+      <td>{{ cuenta.saldo}}</td>
+      <td>{{ cuenta.fechaCreacion }}</td>
+      <td>{{ cuenta.operadora }}</td>
+    </tr>
+  </tbody>
+</table>

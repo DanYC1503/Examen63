@@ -1,0 +1,20 @@
+<div class="form-container">
+    <form >
+      <div class="form-group">
+        <label for="numTelefono">Número de teléfono:</label>
+        <input type="text" id="numTelefono" name="numTelefono" [(ngModel)]="transaccion.numTelefono1" required>
+      </div>
+      <div class="form-group">
+        <label for="monto">Monto:</label>
+        <input type="number" id="monto" name="monto" [(ngModel)]="monto" required>
+    </div>
+      <div class="select-operadora">
+        <label for="operadora">Operadora:</label>
+        <select id="operadora" name="operadora" [(ngModel)]="transaccion.operadora" required>
+          <option *ngFor="let operadora of operadoras" [value]="operadora">{{ operadora }}</option>
+        </select>
+      </div>
+      <button (click)="realizarTransaccion()">Realizar Transacción</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,5 @@
+<ul class="navbar">
+    <li *ngFor="let link of pages">
+      <a [routerLink]="link.path">{{ link.title }}</a>
+    </li>
+  </ul>
