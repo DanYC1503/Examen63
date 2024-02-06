@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Cuenta } from '../domain/cuenta/cuenta.component';
+import { Cuenta } from '../domain/cuenta/cuenta';
 import { environment } from '../environments/environments';
 
 @Injectable({
